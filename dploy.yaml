@@ -1,9 +1,9 @@
 Geometric:
-    scheme: "sftp"
-    host: "sftp.neto.com.au"
+    scheme: sftp
+    host: sftp.neto.com.au
     port: 4157
-    user: "andrewbloyce@caitlintest.neto.com.au"
-    privateKey: ~/.ssh/id_rsa.ppk
+    user: andrewbloyce@caitlintest.neto.com.au
+    privateKey: ~/.ssh/id_rsa/id_rsa
     check: true
     path:
         local: src

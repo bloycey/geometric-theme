@@ -1,4 +1,4 @@
-var gulp = require('gulp');
+/*var gulp = require('gulp');
 var less = require('gulp-less');
 var path = require('path');
 var fs = require('fs');
@@ -23,3 +23,21 @@ gulp.task('watch-less', function () {
     });
    
 });
+
+gulp.task('sftp', function () {
+    return gulp.src('src/*')
+        .pipe(sftp({
+            host: 'sftp.neto.com.au',
+            user: 'andrewbloyce@caitlintest.neto.com.au',
+            port: 4157,
+            key: {
+                location:'~/.ssh/id_rsa/id_rsa'
+            },
+            remotePath: '/httpdocs/assets/themes/skeletal-geometric'
+        }));
+});
+
+gulp.task('default', function () {
+    gulp.watch('src/*', ['sftp']);
+});*/
+
